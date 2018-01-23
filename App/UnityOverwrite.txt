@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 Target.sln: 8F409B21D883512AE2DBB95B52CF2BA7
 Target\App.cs: 0CC0AA02F5ADC10FB5A993BFA2CDD0B1
-Target\Package.appxmanifest: 5474E5B2EFAC5CA27901C38CEA0C529D
+Target\Package.appxmanifest: 8B545356F3D6B5CC7F2018D3FA2DAEC9
 Target\project.json: 1D02BC64BAC0D041019673A1C4C51737
 Target\Target.csproj: 0319712456F44404A16FB82354ACD9FA
 Target\Target.csproj.user: modified

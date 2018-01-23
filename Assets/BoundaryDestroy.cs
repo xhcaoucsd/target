@@ -16,12 +16,10 @@ public class BoundaryDestroy : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("in");
     }
 
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("dest");
         if (other.gameObject.tag == "Bullet")
         {
             Destroy(other.gameObject);

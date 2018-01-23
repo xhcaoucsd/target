@@ -12,7 +12,7 @@
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <DeviceId>F957827B-6FC8-4538-A5BA-3B3807152A56</DeviceId>
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
 </Project>

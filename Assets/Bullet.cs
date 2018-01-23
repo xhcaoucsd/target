@@ -43,8 +43,6 @@ public class Bullet : MonoBehaviour {
         }
         else if (collision.gameObject.tag == "Bullet")
         {
-            
-            Debug.Log("hit");
             if (stuck)
             {
                 rb.useGravity = false;

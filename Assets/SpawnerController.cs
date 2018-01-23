@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
-public class SpawnerController : MonoBehaviour, IInputClickHandler {
+public class SpawnerController : MonoBehaviour, IInputClickHandler, ISpeechHandler {
     public GameObject pf_Target;
     public GameObject pf_Bullet;
 
@@ -11,7 +11,8 @@ public class SpawnerController : MonoBehaviour, IInputClickHandler {
     public float bulletForce = 150.0f;
     public float speed = 100.0f;
     public int shotsPerTurn = 3;
-    public int maxRounds = 2;
+    public int maxRounds = 5;
+    public float endDelay = 4.0f;
 
     private bool isPlacingTarget = false;
     private bool targetPlaced = false;
@@ -24,6 +25,35 @@ public class SpawnerController : MonoBehaviour, IInputClickHandler {
     public int playerTurn { get; set; }
     public int currentPlayer { get; set; }
     public bool gameOn { get; set; }
+
+    private float endTime;
+
+  
+
+    public void OnSpeechKeywordRecognized(SpeechEventData eventData)
+    {
+        string command = eventData.RecognizedText.ToLower();
+        switch (command)
+        {
+            case "reset":
+                isPlacingTarget = false;
+                targetPlaced = false;
+                round = 1;
+                playerTurn = 0;
+                currentPlayer = 0;
+                gameOn = true;
+                GameObject[] gameObjects;
+                gameObjects = GameObject.FindGameObjectsWithTag("Bullet");
+                foreach (GameObject o in gameObjects)
+                {
+                    Destroy(o.gameObject);
+                }
+                Destroy(ins_Target);
+                break;
+            default:
+                break;
+        }
+    }
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
@@ -66,6 +96,7 @@ public class SpawnerController : MonoBehaviour, IInputClickHandler {
     void Start () {
         this.gameOn = true;
         this.playerTurn = 0;
+        this.currentPlayer = 0;
         InputManager.Instance.PushModalInputHandler(gameObject);
         this.ins_Target = null;
         Physics.gravity = Vector3.down * 2.0f;
@@ -73,19 +104,24 @@ public class SpawnerController : MonoBehaviour, IInputClickHandler {
 	
 	// Update is called once per frame
 	void Update () {
-        if (round > maxRounds)
+        if (gameOn && round > maxRounds)
         {
             gameOn = false;
-            ins_Target.GetComponentInChildren<Target>().winMaterial(ins_Target.GetComponentInChildren<Target>().score());
-
+            endTime = Time.time + endDelay;
         }
+        if (!gameOn && Time.time > endTime)
+        {
+            
+            ins_Target.GetComponentInChildren<Target>().winMaterial(ins_Target.GetComponentInChildren<Target>().score());
+        }
+
         if (isPlacingTarget && ins_Target != null)
         {
             RaycastHit hitInfo;
 
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hitInfo))
             {
-                ins_Target.transform.position = hitInfo.point;
+                ins_Target.transform.position = hitInfo.point + Vector3.Normalize(Camera.main.transform.position - hitInfo.point) * 0.2f;
             }
             else
             {

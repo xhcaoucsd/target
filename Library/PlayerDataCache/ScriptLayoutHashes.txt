@@ -1,5 +1,6 @@
 Metro
 7abde016883951c4ca4e7c44ce6adb2c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncher
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoundaryDestroy
 2fb39702360b86b0d9d52bce766883c8 Assembly-CSharp.dll:GLTF.GLTFComponent
 2b05b19efde40faaedd760b2683b7839 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.HandDraggable
 c97883508f65b7aa1df7a0fa9fec94ae Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.GazeStabilizer
@@ -228,6 +229,8 @@ a29ad4068504428bc987939ad419ba75 Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.ResetAnchorButton
 7af9546644a163574e9d4ff26d86b8f2 Assembly-CSharp.dll:HoloToolkit.Unity.FadeScript
 7a65adebc9a24f885fe1434a888037a0 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.InteractionInputSource
+671d62c40f947fdbe161ccd8ce53712d Assembly-CSharp.dll:.Target
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Test
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.InputManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.DebugPanel
 173ecf8cc500c312e9f70f78fdef4847 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.HandGuidance
@@ -242,6 +245,7 @@ c484ca1fbf03cde4786f8ffa4334186d Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 fad8dbf1251c6c663ef61aa4876f6776 Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.Keyboard
 cade32f28e21a5f2370dd82c3d56c28c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncherButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.SetGlobalListener
+671d62c40f947fdbe161ccd8ce53712d Assembly-CSharp.dll:.Bullet
 39e33eeaa8482d2bae989c16b9871dff Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.MeshCursor
 531fdf2c183c5453dac7ae13d94bb399 Assembly-CSharp.dll:GLTF.GLTFComponentStreamingAssets
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -291,6 +295,7 @@ ecce978abee70e7852a63184a5b0520d Assembly-CSharp.dll:HoloToolkit.Unity.DebugPane
 8644983781391a1a0c05940eaa565fef Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.RemoteMeshSource
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 4c81c8962ca9c4dfc6f330235be37fe9 Assembly-CSharp.dll:HoloToolkit.Sharing.Utilities.DirectPairing
+2ba51d0d6ebf23698917461159440618 Assembly-CSharp.dll:.CursorColor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.DictationInputManager
 960588de1ff099aa2d1b4ff55adb229b Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.TriggerButton
 1f424fc177a1b1799804ec8521acb15c Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.PlayerController
@@ -305,7 +310,7 @@ d5caa5c507202d113c0e7f0a26ca4bba Assembly-CSharp.dll:HoloToolkit.Unity.AudioOccl
 818cc923a72dcfe3a52a0eb281828393 Assembly-CSharp.dll:HoloToolkit.Unity.HeadsUpDirectionIndicator
 49febca92ce435f92504a89f23fd84ca Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.KeyboardKeyFunc
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.UsabilityScaler
-57c76d5dc9e97b91736567bc3588a89c Assembly-CSharp.dll:.SpawnerController
+c86f2be875db9de6ad2d7142bed73592 Assembly-CSharp.dll:.SpawnerController
 1c956525f3bbc043ebd0ce75f92a03c6 Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.NetworkDiscoveryWithAnchors
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.SharedCollection
 843980f90e915da29bb6f3eadb5d5d57 Assembly-CSharp.dll:HoloToolkit.Unity.SimpleTagalong
@@ -370,6 +375,3 @@ a9e1c36c671666e79706791e556d5100 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehav
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Test
-671d62c40f947fdbe161ccd8ce53712d Assembly-CSharp.dll:.Bullet
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoundaryDestroy
